@@ -1,0 +1,55 @@
+<mxfile host="65bd71144e">
+    <diagram id="bo_XjHe8VZCh_QMD3yil" name="Page-1">
+        <mxGraphModel dx="646" dy="448" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;font color=&quot;#000000&quot; style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Factuur&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#FFFFFF;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;strokeColor=#000000;shadow=0;glass=0;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="270" width="290" height="190" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;font color=&quot;#000000&quot;&gt;- $ArtikelBoek : Boek&lt;br&gt;- $Boek : String&lt;br&gt;- $Aantal : Int&lt;br&gt;- $Korting : Float&lt;br&gt;- $Btw : Float&lt;br&gt;- $Bedrag : Float&lt;/font&gt;" style="text;strokeColor=#000000;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                    <mxGeometry y="26" width="290" height="94" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;font color=&quot;#000000&quot;&gt;+ Factuur($&lt;/font&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;ArtikelBoek&amp;nbsp;&lt;/span&gt;&lt;font color=&quot;#000000&quot;&gt;Boek, $boek String, $aantal int, $korting Float, $btw Float)&lt;br&gt;&lt;br&gt;BerekenTotaalBedrag() : Float&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=#000000;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                    <mxGeometry y="120" width="290" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;font color=&quot;#000000&quot; style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;Boek&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#FFFFFF;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;strokeColor=#000000;shadow=0;glass=0;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="550" width="270" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="&lt;font color=&quot;#000000&quot;&gt;- $Naam : String&amp;nbsp; &lt;br&gt;- $Auteur : String &lt;br&gt;- $Jaar : Int&amp;nbsp; &lt;br&gt;- $Prijs : Float &lt;br&gt;- $Isbn: Float&lt;/font&gt;" style="text;strokeColor=#000000;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="10" vertex="1">
+                    <mxGeometry y="26" width="270" height="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;font color=&quot;#000000&quot;&gt;+ Boek(&lt;/font&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;$Naam : String,&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;$Auteur : String,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;$Jaar : int,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;$Prijs : Float&lt;/span&gt;&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;, $Isbn : Float&lt;/span&gt;&lt;font color=&quot;#000000&quot;&gt;)&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=#000000;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="10" vertex="1">
+                    <mxGeometry y="110" width="270" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.501;entryY=0.889;entryDx=0;entryDy=0;entryPerimeter=0;" parent="10" source="10" target="12" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;font color=&quot;#000000&quot; style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;AfdrukFactuur&lt;/font&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#FFFFFF;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;html=1;strokeColor=#000000;shadow=0;glass=0;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="250" y="10" width="210" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="&lt;font color=&quot;#000000&quot;&gt;- $Factuur : Factuur&lt;br&gt;- $Factuurnummer : Int&lt;br&gt;- $Factuurdatum : String&lt;/font&gt;" style="text;strokeColor=#000000;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="14" vertex="1">
+                    <mxGeometry y="26" width="210" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="&lt;font color=&quot;#000000&quot;&gt;+ AfdrukFactuur($Factuur : Factuur,&lt;br&gt;$Factuurnummer : Int,&lt;br&gt;$Factuurdatum : String)&lt;br&gt;&lt;br&gt;AfdrukFactuur() : void&lt;br&gt;&lt;/font&gt;" style="text;strokeColor=#000000;fillColor=#FFFFFF;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="14" vertex="1">
+                    <mxGeometry y="80" width="210" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.501;entryY=0.889;entryDx=0;entryDy=0;entryPerimeter=0;" parent="14" source="14" target="16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;strokeColor=#000000;rotation=-90;" parent="1" vertex="1">
+                    <mxGeometry x="332.33" y="182" width="43.33" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="line;strokeWidth=2;html=1;strokeColor=#000000;rotation=-90;" parent="1" vertex="1">
+                    <mxGeometry x="327.5" y="240.49" width="55" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="line;strokeWidth=2;html=1;strokeColor=#000000;rotation=-90;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="522.33" width="51.34" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="" style="html=1;whiteSpace=wrap;aspect=fixed;shape=isoRectangle;strokeColor=#000000;rotation=-90;" parent="1" vertex="1">
+                    <mxGeometry x="309.01" y="470" width="33.33" height="20" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
